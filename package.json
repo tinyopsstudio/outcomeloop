@@ -36,6 +36,7 @@
     "long-running-agent"
   ],
   "author": "TinyOps Studio LLC",
+  "funding": "https://whop.com/joined/tinyops-studio-llc/products/ai-agent-workflow-sprint/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tinyopsstudio/outcomeloop.git"

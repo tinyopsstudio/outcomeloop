@@ -90,6 +90,9 @@ async function json(url) {
 }
 
 async function loadData() {
+  const staticDemo = location.hostname.endsWith('.github.io') || new URLSearchParams(location.search).has('demo');
+  if (staticDemo) return json('./demo-data.json');
+
   try {
     const [state, events] = await Promise.all([json('./api/state'), json('./api/events')]);
     const receipt = await json('./api/receipt').catch(() => null);
